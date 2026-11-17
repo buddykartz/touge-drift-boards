@@ -1,0 +1,25 @@
+{
+  "version": 1,
+  "enabled": true,
+  "revision": 1,
+
+  "default": [
+    { "image": "images/touge-drift.png" },
+    { "message": ["KEEP IT", "SIDEWAYS"] },
+    { "image": "images/mizu-sparrow.png" }
+  ],
+
+  "worlds": {
+    "port": [
+      { "image": "images/night-owls.jpg" },
+      { "message": "HARBOUR LIGHTS\nOPEN ALL NIGHT", "background": "#10182E", "color": "#4FA3F7" }
+    ]
+  },
+
+  "passes": {
+    "ember-descent": [
+      { "image": "images/ember-descent.png", "start": "2026-01-01" },
+      { "message": ["QUARRY TRAFFIC", "KEEP RIGHT"], "background": "#F2B41E", "color": "#14161F" }
+    ]
+  }
+}
