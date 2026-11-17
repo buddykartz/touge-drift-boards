@@ -101,10 +101,14 @@ Each world has one pass today, so `worlds` and `passes` reach the same places fo
 
 ## Pictures
 
-- **Size: 1480 x 600 pixels.** That is the shape of a hoarding's face. Other sizes are fitted to
-  it, so keep close to that shape.
-- PNG or JPEG, ideally well under 1 MB each.
-- Bold shapes and large lettering: a hoarding is seen from a distance and passes quickly.
+- **Size: 1480 x 600 pixels.** That is the shape of a hoarding's face (about 2.47 to 1). The game
+  scales it down to 768 x 311, so there is nothing to gain from anything larger.
+- A picture of a different shape is never stretched. It is scaled to cover the face, and whatever
+  hangs over is cut off evenly, top and bottom or left and right.
+- PNG or JPEG. Keep each under about 300 KB: players download them over their own connection.
+- Anything see-through in a PNG shows white.
+- Use a few large words, strong contrast and bold shapes: a hoarding is on screen for a second or
+  two, at an angle. Small print will not be read.
 
 ## Limits
 
