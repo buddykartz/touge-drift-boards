@@ -1,6 +1,6 @@
 # touge-drift-boards
 
-Roadside hoarding artwork and messages for the Touge Drift game.
+Roadside hoarding artwork and messages for the Apex Crews game.
 
 The game reads `boards.json` from this repository's site
 (`https://buddykartz.github.io/touge-drift-boards/boards.json`) and shows the pictures and
@@ -82,22 +82,42 @@ Each entry is either a picture or a message, never both.
 ### Names to use
 
 Spell them exactly as shown, in small letters. A list for a name the game does not know is ignored.
+"Stages" are the career stage numbers raced on that pass (the career has 28 stages in four crews).
 
-| Pass (name in the game) | Name in `passes` | Its world, for `worlds` | Hoardings today |
+| Pass (name in the game) | Name in `passes` | Its world, for `worlds` | Stages |
 | --- | --- | --- | --- |
-| Pine Hollow | `pine-hollow` | `woodland` | 2 |
-| Cedar Steps | `cedar-steps` | `farmland` | 2 |
-| Ochre Ridge | `maple-ridge` | `desert` | 4 |
-| Ember Descent | `ember-descent` | `quarry` | 6 |
-| Glowworm Bends | `sakura-bends` | `port` | 5 |
-| Aurora Crest | `moonlit-crest` | `summit` | 1 |
-| Frost Hollow | `frost-pass` | `alpine` | 1 |
-| Coral Coast | `coral-coast` | `coast` | none |
+| Pine Hollow | `pine-hollow` | `woodland` | 1 |
+| Cedar Steps | `cedar-steps` | `farmland` | 2, 5 |
 | High Moor | `high-moor` | `moor` | 3 |
+| Ochre Ridge | `maple-ridge` | `desert` | 4 |
+| Frost Hollow | `frost-pass` | `alpine` | 6, 11 |
+| Ember Descent | `ember-descent` | `quarry` | 7, 8 |
+| Glowworm Bends | `sakura-bends` | `port` | 9 |
+| Coral Coast | `coral-coast` | `coast` | 10 |
+| Aurora Crest | `moonlit-crest` | `summit` | 12, 13, 14 |
+| Wren Gully | `wren-gully` | `woodland` | 15 |
+| Granite Stair | `granite-stair` | `quarry` | 16, 26 |
+| Kelp Bay | `kelp-bay` | `coast` | 17 |
+| Saltpan Dash | `saltpan-dash` | `desert` | 18 |
+| Larch Zigzag | `larch-zigzag` | `alpine` | 19, 24 |
+| Long Barrow | `long-barrow` | `farmland` | 20 |
+| Starfall Ridge | `starfall-ridge` | `summit` | 21, 27 |
+| Lantern Quay | `lantern-quay` | `port` | 22 |
+| Heather Sweep | `heather-sweep` | `moor` | 23 |
+| Glacier Road | `glacier-road` | `alpine` | 25, 28 |
 
-The last column is how many hoardings the scenery puts on each pass in the current build; it
-changes when the scenery is reworked. Coral Coast has none at the moment, so nothing shows there.
-Each world has one pass today, so `worlds` and `passes` reach the same places for now.
+Some worlds now hold more than one pass, so a `worlds` list reaches every pass in that world, and a
+`passes` list reaches just one. Every pass has several hoardings (three to five kinds of prop in each
+world's rotation are hoardings), and Solo Drift and Endless use the same passes.
+
+### The crews
+
+| Crew | Stages | Colour |
+| --- | --- | --- |
+| Night Owls | 1 to 7 | `#4FA3F7` |
+| Red Lanterns | 8 to 14 | `#E8552E` |
+| Jade Foxes | 15 to 21 | `#2FBF8F` |
+| Storm Crows | 22 to 28 | `#9B6BFF` |
 
 ## Pictures
 
@@ -148,8 +168,7 @@ give the new picture a new name and change the entry to match.
 - Open the manifest's address in a browser. Is it your latest version?
 - Is the file still valid JSON? One missing comma or quotation mark makes the game ignore all of it.
 - Does each picture's name in the manifest match the file exactly, capitals included?
-- Is the entry in date, inside the limits, and on a pass that has hoardings?
-- Is **Online hoardings** switched on in the game's settings?
+- Is the entry in date and inside the limits?
 
 ## What may be shown
 

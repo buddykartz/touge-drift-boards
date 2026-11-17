@@ -1,24 +1,63 @@
 {
   "version": 1,
   "enabled": true,
-  "revision": 1,
+  "revision": 2,
 
   "default": [
-    { "image": "images/touge-drift.png" },
+    { "image": "images/apex-crews.jpg" },
     { "message": ["KEEP IT", "SIDEWAYS"] },
     { "image": "images/mizu-sparrow.png" }
   ],
 
   "worlds": {
+    "woodland": [
+      { "image": "images/night-owls-crew.jpg" },
+      { "image": "images/apex-crews.jpg" },
+      { "message": ["NIGHT OWLS", "RULE THE PINES"], "background": "#10182E", "color": "#4FA3F7" }
+    ],
+    "farmland": [
+      { "image": "images/night-owls-crew.jpg" },
+      { "image": "images/apex-crews.jpg" },
+      { "message": ["CEDAR STEPS", "TIGHT AND TWISTY"] }
+    ],
+    "desert": [
+      { "image": "images/red-lanterns-crew.jpg" },
+      { "image": "images/apex-crews.jpg" },
+      { "message": ["NO WATER", "FOR 40 KM"], "background": "#F2B41E", "color": "#14161F" }
+    ],
+    "quarry": [
+      { "image": "images/red-lanterns-crew.jpg" },
+      { "image": "images/apex-crews.jpg" }
+    ],
     "port": [
       { "image": "images/night-owls.jpg" },
+      { "image": "images/jade-foxes-crew.jpg" },
       { "message": "HARBOUR LIGHTS\nOPEN ALL NIGHT", "background": "#10182E", "color": "#4FA3F7" }
+    ],
+    "coast": [
+      { "image": "images/jade-foxes-crew.jpg" },
+      { "image": "images/apex-crews.jpg" },
+      { "message": ["SURF'S UP", "DRIFT ON"], "background": "#1688D8", "color": "#F6F1E7" }
+    ],
+    "summit": [
+      { "image": "images/storm-crows-crew.jpg" },
+      { "image": "images/apex-crews.jpg" }
+    ],
+    "alpine": [
+      { "image": "images/storm-crows-crew.jpg" },
+      { "image": "images/apex-crews.jpg" },
+      { "message": ["ICE ON BENDS", "STAY SIDEWAYS"], "background": "#DCE5EB", "color": "#1C2A3A" }
+    ],
+    "moor": [
+      { "image": "images/storm-crows-crew.jpg" },
+      { "image": "images/apex-crews.jpg" }
     ]
   },
 
   "passes": {
     "ember-descent": [
       { "image": "images/ember-descent.png", "start": "2026-01-01" },
+      { "image": "images/red-lanterns-crew.jpg" },
       { "message": ["QUARRY TRAFFIC", "KEEP RIGHT"], "background": "#F2B41E", "color": "#14161F" }
     ]
   }
